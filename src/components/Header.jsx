@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router"
-import rentifyLogo from "../../public/rentify-logo.svg"
 import plusIcon from "../assets/icons/plus.svg"
 
 function Header() {
@@ -7,7 +6,7 @@ function Header() {
         <section className="text-white sticky flex items-center justify-between z-10">
             <div>
                 <Link to="/">
-                    <img src={rentifyLogo} alt="logo" />
+                    <img src="/rentify-logo.svg" alt="logo" />
                 </Link>
             </div>
             <div className="flex items-center">
