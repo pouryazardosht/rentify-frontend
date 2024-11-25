@@ -1,11 +1,14 @@
-import { NavLink } from "react-router"
+import { Link, NavLink } from "react-router"
 import rentifyLogo from "../../public/rentify-logo.svg"
+import plusIcon from "../assets/icons/plus.svg"
 
 function Header() {
     return (
         <section className="text-white sticky flex items-center justify-between bg-slate-800">
             <div>
-                <img src={rentifyLogo} alt="logo" />
+                <Link to="/">
+                    <img src={rentifyLogo} alt="logo" />
+                </Link>
             </div>
             <div className="flex items-center">
                 <nav className="text-h6 flex items-center gap-6">
@@ -23,9 +26,10 @@ function Header() {
                     </NavLink>
                 </nav>
             </div>
-            <div>
+            <div className="flex items-center gap-2">
                 <button>ورود|ثبت نام</button>
-                <button>
+                <button className="bg-primary rounded-lg px-2 py-3 hover:bg-shade1 flex items-center gap-2">
+                    <img src={plusIcon} alt="pluse" />
                     ثبت آگهی رایگان
                 </button>
             </div>
