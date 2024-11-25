@@ -44,6 +44,37 @@ export default {
             fontWeight: 700,
           },
         ],
+        //button
+        "button-xlg": [
+          "1.25rem",
+          {
+            fontWeight: 500,
+          },
+        ],
+        "button-lg": [
+          "1.125rem",
+          {
+            fontWeight: 500,
+          },
+        ],
+        "button-md": [
+          "1.125rem",
+          {
+            fontWeight: 500,
+          },
+        ],
+        "button-s": [
+          "1rem",
+          {
+            fontWeight: 500,
+          },
+        ],
+        "button-ss": [
+          "0.875rem",
+          {
+            fontWeight: 500,
+          },
+        ],
       },
       colors: {
         primary: "#0D6EFD",

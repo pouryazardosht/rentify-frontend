@@ -1,6 +1,15 @@
 function SearchBar() {
     return (
-        <div>SearchBar</div>
+        <div className="flex items-center py-3">
+            <div className="bg-white">
+
+            </div>
+            <div className="bg-primary rounded-e-xl">
+                <p className="text-white text-button-s">
+                    جستجو
+                </p>
+            </div>
+        </div>
     )
 }
 
