@@ -12,36 +12,42 @@ export default {
           "2.75rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
         h2: [
           "2.5rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
         h3: [
           "2rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
         h4: [
           "1.5rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
         h5: [
           "1.25rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
         h6: [
           "1.125rem",
           {
             lineHeight: "9rem",
+            fontWeight: 700,
           },
         ],
       },
