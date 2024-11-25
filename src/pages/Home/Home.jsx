@@ -1,4 +1,5 @@
 import Header from "../../components/Header"
+import Banner from "./components/Banner"
 
 function Home() {
   return (
@@ -7,6 +8,7 @@ function Home() {
         <header className="container">
           <Header />
         </header>
+        <Banner />
       </div>
     </section>
   )
