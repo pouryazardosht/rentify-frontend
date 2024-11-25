@@ -1,6 +1,12 @@
+import Header from "../../components/Header"
+
 function Home() {
   return (
-    <div>Home</div>
+    <section className="container">
+      <header>
+        <Header />
+      </header>
+    </section>
   )
 }
 

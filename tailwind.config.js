@@ -2,7 +2,49 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
+      fontSize: {
+        //heading
+        h1: [
+          "2.75rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+        h2: [
+          "2.5rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+        h3: [
+          "2rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+        h4: [
+          "1.5rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+        h5: [
+          "1.25rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+        h6: [
+          "1.125rem",
+          {
+            lineHeight: "9rem",
+          },
+        ],
+      },
       colors: {
         primary: "#0D6EFD",
         black: "#0C0C0C",
@@ -41,6 +83,9 @@ export default {
         success1: "#00BA88",
         warning: "#A9791C",
         warning1: "#F4B740",
+      },
+      fontFamily: {
+        vazir: ["vazirmatn", "sans-serif"],
       },
     },
   },
