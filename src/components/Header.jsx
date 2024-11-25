@@ -26,7 +26,7 @@ function Header() {
                     </NavLink>
                 </nav>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
                 <button>ورود|ثبت نام</button>
                 <button className="bg-primary rounded-lg px-2 py-3 hover:bg-shade1 flex items-center gap-2">
                     <img src={plusIcon} alt="pluse" />
