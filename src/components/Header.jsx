@@ -3,7 +3,7 @@ import plusIcon from "../assets/icons/plus.svg"
 
 function Header() {
     return (
-        <section className="text-white flex items-center justify-between z-10">
+        <section className="text-white flex items-center justify-between z-10 py-10">
             <Link to="/">
                 <img src="/rentify-logo.svg" alt="logo" />
             </Link>
@@ -15,7 +15,7 @@ function Header() {
                 <NavLink to="about">درباره رنتی فای</NavLink>
             </nav>
             <div className="flex items-center gap-4">
-                <button>ورود|ثبت نام</button>
+                <button>ورود | ثبت نام</button>
                 <button className="bg-primary rounded-lg px-2 py-3 hover:bg-shade1 flex items-center gap-2">
                     <img src={plusIcon} alt="pluse" />
                     ثبت آگهی رایگان
