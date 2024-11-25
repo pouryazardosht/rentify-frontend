@@ -4,7 +4,7 @@ import plusIcon from "../assets/icons/plus.svg"
 
 function Header() {
     return (
-        <section className="text-white sticky flex items-center justify-between bg-slate-800">
+        <section className="text-white sticky flex items-center justify-between z-10">
             <div>
                 <Link to="/">
                     <img src={rentifyLogo} alt="logo" />

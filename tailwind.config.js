@@ -87,6 +87,9 @@ export default {
       fontFamily: {
         vazir: ["vazirmatn", "sans-serif"],
       },
+      backgroundImage: {
+        "banner-pattern": "url('/src/assets/images/banner-img.png')",
+      },
     },
   },
   plugins: [],
