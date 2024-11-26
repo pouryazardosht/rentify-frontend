@@ -1,4 +1,4 @@
-import daisyui from 'daisyui';
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -77,6 +77,13 @@ export default {
             fontWeight: 500,
           },
         ],
+        // body
+        "body-1xs": [
+          "1rem",
+          {
+            fontWeight: 400,
+          },
+        ],
       },
       colors: {
         primary: "#0D6EFD",
@@ -122,11 +129,14 @@ export default {
       },
       backgroundImage: {
         "banner-pattern": "url('/src/assets/images/banner-img.png')",
+        "banner-card1": "url('/src/assets/images/BannerCard1.png')",
+        "banner-card2": "url('/src/assets/images/BannerCard2.png')",
+        "banner-card3": "url('/src/assets/images/BannerCard3.png')",
       },
     },
   },
-  plugins: [
-    daisyui,
-  ],
-
+  daisyui: {
+    themes: [],
+  },
+  plugins: [daisyui],
 };

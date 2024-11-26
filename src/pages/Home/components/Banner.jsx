@@ -1,3 +1,4 @@
+import BannerCardsContainer from "./BannerCardsContainer"
 import SearchBar from "./SearchBar"
 
 function Banner() {
@@ -7,6 +8,7 @@ function Banner() {
                 در <span className="text-primary">رنتیفای</span> دنبال چه ملکی هستید؟
             </p>
             <SearchBar />
+            <BannerCardsContainer />
         </div>
     )
 }
