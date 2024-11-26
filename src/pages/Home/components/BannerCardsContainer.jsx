@@ -6,10 +6,12 @@ import BannerCard from "./BannerCard"
 
 function BannerCardsContainer() {
     return (
-        <div className="flex items-center gap-8">
-            <BannerCard image="bg-banner-card1" title="ویلا" />
-            <BannerCard image="bg-banner-card2" title="آپارتمان" />
-            <BannerCard image="bg-banner-card3" title="خانه ویلایی" />
+        <div className="flex justify-center ">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                <BannerCard image="bg-banner-card1" title="ویلا" />
+                <BannerCard image="bg-banner-card2" title="آپارتمان" />
+                <BannerCard image="bg-banner-card3" title="خانه ویلایی" />
+            </div>
         </div>
     )
 }
