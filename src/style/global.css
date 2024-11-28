@@ -4,7 +4,7 @@
 
 * {
   @apply font-vazir;
-  @apply transition;
+  @apply transition-all;
   @apply ease-in-out;
 }
 body {

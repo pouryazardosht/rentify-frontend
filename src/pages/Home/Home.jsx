@@ -1,5 +1,6 @@
 import Header from "../../components/Header"
 import Banner from "./components/Banner"
+import HomeCardsContainer from "./components/HomeCardsContainer"
 
 function Home() {
   return (
@@ -8,7 +9,10 @@ function Home() {
         <header className="container">
           <Header />
         </header>
-        <Banner />
+        <main className="container px-5">
+          <Banner />
+          <HomeCardsContainer />
+        </main>
       </div>
     </section>
   )
