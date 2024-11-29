@@ -84,6 +84,25 @@ export default {
             fontWeight: 400,
           },
         ],
+        // caption
+        "caption-lg": [
+          "0.875rem",
+          {
+            fontWeight: 300,
+          },
+        ],
+        "caption-md": [
+          "0.75rem",
+          {
+            fontWeight: 300,
+          },
+        ],
+        "caption-sm": [
+          "0.625rem",
+          {
+            fontWeight: 300,
+          },
+        ],
       },
       colors: {
         primary: "#0D6EFD",

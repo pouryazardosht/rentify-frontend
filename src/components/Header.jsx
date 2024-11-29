@@ -15,7 +15,9 @@ function Header() {
                 <NavLink to="about">درباره رنتی فای</NavLink>
             </nav>
             <div className="flex items-center gap-4">
-                <button>ورود | ثبت نام</button>
+                <Link to="/login">
+                    <button>ورود | ثبت نام</button>
+                </Link>
                 <button className="bg-primary rounded-lg px-2 py-3 hover:bg-shade1 flex items-center gap-2">
                     <img src={plusIcon} alt="pluse" />
                     ثبت آگهی رایگان
