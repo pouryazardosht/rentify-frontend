@@ -21,14 +21,14 @@ function Login() {
                             onClick={() => {
                                 setIsOwner(true);
                             }}
-                            className={(isOwner ? "bg-white text-black" : "") + " w-2/4 py-3 rounded-xl"}>
+                            className={(isOwner ? "bg-white text-black shadow-md" : "") + " w-2/4 py-3 rounded-xl"}>
                             مالک | مستاجر
                         </button>
                         <button
                             onClick={() => {
                                 setIsOwner(false);
                             }}
-                            className={(!isOwner ? "bg-white text-black" : "") + " w-2/4 py-3 rounded-xl"}>
+                            className={(!isOwner ? "bg-white text-black shadow-md" : "") + " w-2/4 py-3 rounded-xl"}>
                             آژانس املاک
                         </button>
                     </div>
