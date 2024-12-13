@@ -29,11 +29,21 @@ function HomeCardsContainer() {
                     <img src={arrowIcon} />
                 </Link>
             </div>
-            <div>
-                {houses.map((house) => (
-                    <HomeCard key={house.id} id={house.id} title={house.title} />
-                )
-                )}
+            <div className="flex justify-center mt-10">
+                <div className="grid gap-6  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {houses.map((house) => (
+                        <HomeCard
+                            key={house.id}
+                            id={house.id}
+                            title={house.title}
+                            mortgageAmount={house.mortgageAmount}
+                            rentAmount={house.rentAmount}
+                            address={house.address}
+                            kind={house.kind}
+                        />
+                    )
+                    )}
+                </div>
             </div>
         </div>
     )
