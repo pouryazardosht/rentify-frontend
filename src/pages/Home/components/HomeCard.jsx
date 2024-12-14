@@ -1,26 +1,27 @@
 import housePic from "../../../assets/images/housepic.png";
 import locationPoint from "../../../assets/icons/locationPoint.svg"
 import tomanIcon from "../../../assets/icons/tomanIcon.svg";
-import { Link } from "react-router";
+import {Link} from "react-router";
+import PropTypes from "prop-types";
 
-function HomeCard({ id, title, mortgageAmount, rentAmount, address, kind }) {
+function HomeCard({id, title, mortgageAmount, rentAmount, address, kind}) {
 
     return (
         <Link to={"/house/" + id} className="rounded-2xl bg-white flex flex-col hover:scale-[0.98] active:scale-[0.97]">
-            <img className="rounded-t-2xl" src={housePic} alt="pic" />
+            <img className="rounded-t-2xl" src={housePic} alt="pic"/>
             <div className="px-4 py-3 flex flex-col items-start gap-3">
                 <div className="flex items-center gap-2">
                     <p
                         className={(
-                            kind === "خانه ویلایی" ? "bg-[#D67114]" :
-                                kind === "آپارتمان" ? "bg-success" :
-                                    kind === "ویلا" ? "bg-shade2" : "")
+                                kind === "خانه ویلایی" ? "bg-[#D67114]" :
+                                    kind === "آپارتمان" ? "bg-success" :
+                                        kind === "ویلا" ? "bg-shade2" : "")
                             + " text-[14px] font-medium text-white rounded-xl py-1 px-2"
                         }>
                         {kind}
                     </p>
                     <div className="flex items-center gap-1">
-                        <img src={locationPoint} alt="locationPoint" />
+                        <img src={locationPoint} alt="locationPoint"/>
                         <p className="text-g3 font-light text-[15px]">
                             {address}
                         </p>
@@ -38,7 +39,7 @@ function HomeCard({ id, title, mortgageAmount, rentAmount, address, kind }) {
                             <p>
                                 {mortgageAmount.toLocaleString()}
                             </p>
-                            <img src={tomanIcon} alt="toman" />
+                            <img src={tomanIcon} alt="toman"/>
                         </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -49,13 +50,22 @@ function HomeCard({ id, title, mortgageAmount, rentAmount, address, kind }) {
                             <p>
                                 {rentAmount.toLocaleString()}
                             </p>
-                            <img src={tomanIcon} alt="toman icon" />
+                            <img src={tomanIcon} alt="toman icon"/>
                         </div>
                     </div>
                 </div>
             </div>
         </Link>
     )
+}
+
+HomeCard.propTypes = {
+    id: PropTypes.number,
+    title: PropTypes.string,
+    mortgageAmount: PropTypes.number,
+    rentAmount: PropTypes.number,
+    address: PropTypes.string,
+    kind: PropTypes.string,
 }
 
 export default HomeCard
